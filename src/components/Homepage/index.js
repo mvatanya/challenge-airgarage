@@ -10,11 +10,13 @@ const Homepage = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
+      setResults()
       const searchResults = await getParkingBusinesses(location)
       setResults(searchResults)
     } catch (errors){
       setError('Something went wrong. Please try another location')
     }
+    setLocation('')
   }
 
   /**
@@ -40,6 +42,7 @@ const Homepage = () => {
       </tr>
     )
   })
+  console.log('results', results)
   return (
     <div>
       <form onSubmit={handleSubmit} className='form-input'>
