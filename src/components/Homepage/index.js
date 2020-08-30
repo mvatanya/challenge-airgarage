@@ -21,6 +21,7 @@ const Homepage = () => {
 
   /**
    * Show
+      name,
       address, 
       an image if available, 
       star rating, 
@@ -34,7 +35,7 @@ const Homepage = () => {
       <tr key={b.id}>
         <td>{b.name}</td>
         <td>{b.location.display_address}</td>
-        <td><img src={b.image_url} width='200' height='200'/></td>
+        <td><img src={b.image_url} width='200' height='200' alt='business'/></td>
         <td>{b.rating}</td>
         <td>{b.review_count}</td>
         <td><a href={b.url}>Visit Website</a></td>
