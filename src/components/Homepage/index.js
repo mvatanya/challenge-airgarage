@@ -42,7 +42,6 @@ const Homepage = () => {
       </tr>
     )
   })
-  console.log('results', results)
   return (
     <div>
       <form onSubmit={handleSubmit} className='form-input'>
