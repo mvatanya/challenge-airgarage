@@ -46,7 +46,7 @@ const Homepage = () => {
   return (
     <div>
       <form onSubmit={handleSubmit} className='form-input'>
-        Search Location:
+        Search Parking Location: 
         <input 
           name='location'
           value={location}
