@@ -52,6 +52,7 @@ const Homepage = () => {
           value={location}
           onChange={e => setLocation(e.target.value)}
         />
+        <button>Search</button>
       </form>
       {results? (
         <table>
